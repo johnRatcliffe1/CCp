@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caeser cipher project</title>
+</head>
+<body>
+    <form name="caeserForm" id="caeserForm">
+        <label for="userInput">Enter text to encrypt</label>
+        <textarea id="userInput" cols="50" rows="4" oninput="enDeCode()"></textarea>
+        <br>
+        <label for ="encode">Encode:</label>
+        <input type="radio" id="encode" name="code" checked onchange="enDeCode()">
+        <label for ="decode">Decode:</label>
+        <input type="radio" id="decode" name="code" onchange="enDeCode()">
+        <br>
+        <label for="userKey">Key:</label>
+        <input type="number" id="userKey" min="0" max="26" value="1" onchange="enDeCode()">
+        <br>
+        <label for="output">Output:</label>
+        <textarea id="output" cols="50" rows="4"></textarea>
+    </form>
+
+
+    <script src="caeser.js"></script>
+</body>
+</html>
